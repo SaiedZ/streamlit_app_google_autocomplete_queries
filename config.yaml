@@ -1,0 +1,20 @@
+# https://github.com/mkhorasani/Streamlit-Authenticator
+credentials:
+  usernames:
+    firstUser:
+      email: firstuser@gmail.com
+      name: firstuser
+      # import streamlit_authenticator as stauth
+      # hashed_passwords = stauth.Hasher([‘12345’, ‘111213’]).generate()
+      password: $2b$12$0wBb7CAEEdV0aQ.WhNFGROykT0wEL0ntjtGw4cRZunutWBMb0v0MK # Must be replaced with the hashed password
+    secondUser:
+      email: seconduser@gmail.com
+      name: seconduser
+      password: $2b$12$OqxAStSzfux1jmcr.Kg96OV.o40dnALezaNsXCefuu8x65NZ31YBe # Must be replaced with the hashed password
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+preauthorized:
+  emails:
+    - my@gmail.com
